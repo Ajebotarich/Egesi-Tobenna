@@ -1,0 +1,89 @@
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px;
+}
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+}
+
+.food {
+  background-color: #999;
+  border: 1px solid black;
+  margin: 0 15px;
+  padding: 10px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.food-last {
+  background-color: #999;
+  border: 1px solid black;
+  margin: 0 15px;
+  padding: 10px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  width: 100px;
+  text-align: center;
+  padding: 3px 0;
+  font-weight: bold;
+}
+
+.chicken {
+  background-color: pink;
+}
+
+.beef {
+  background-color: firebrick;
+  color: white;
+}
+
+.sushi {
+  background-color: khaki;
+}
+
+@media only screen and (max-device-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+
+  .food {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .inner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .food {
+    float: left;
+  }
+
+  .last {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 992px) {
+  .inner-wrapper {
+    display: flex;
+  }
+}
