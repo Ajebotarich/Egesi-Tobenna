@@ -1,0 +1,30 @@
+body{
+	font-size: 16px;
+	color: #000;
+	background-color: white;
+	font-family: 'Lobster', cursive;
+}
+.navbar-brand{
+	color: #000;
+	font-size: 30px;
+	margin: 5px;
+}
+
+.content{
+	margin: 20px;
+	border: 0px solid black;
+	padding: 15px;
+	background-color: #999;
+
+}
+
+h2{
+	margin-top: 15px;
+}
+
+@media only screen and (max-device-width: 572px) {
+  .nav-item{
+  	background-color: maroon;
+  	font-size: 18px;
+  }
+}
